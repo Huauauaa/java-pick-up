@@ -3,3 +3,4 @@
 *.class
 java-pick-up.iml
 
+/out/
