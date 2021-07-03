@@ -1,3 +1,5 @@
+package com.hua.demo;
+
 import java.util.Arrays;
 
 public class ArrayTest {

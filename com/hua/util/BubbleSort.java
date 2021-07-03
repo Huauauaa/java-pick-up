@@ -1,3 +1,5 @@
+package com.hua.util;
+
 public class BubbleSort {
   public static void main(String[] args) {
     int[] o = new int[] { 2, 1, 4, 3 };

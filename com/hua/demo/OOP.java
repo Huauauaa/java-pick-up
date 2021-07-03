@@ -1,3 +1,5 @@
+package com.hua.demo;
+
 public class OOP {
     public static void main(String[] args) {
         Data d = new Data();
