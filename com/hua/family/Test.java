@@ -13,6 +13,5 @@ public class Test {
         Harvey m1 = new Martin();
         System.out.println(m1.lastname);
         System.out.println(m1.getAge());
-        m1.play();
     }
 }
