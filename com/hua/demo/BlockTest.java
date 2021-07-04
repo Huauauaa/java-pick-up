@@ -10,6 +10,12 @@ public class BlockTest {
         System.out.println("-----------------------------");
         Student s2 = new Student();
     }
+
+    @Test
+    public  void test1() {
+        System.out.println(Man.nation);
+        System.out.println(new Man().nation);
+    }
 }
 
 
@@ -21,6 +27,8 @@ class Man {
     {
         System.out.println("Man's block");
     }
+
+    static String nation = "China";
 
     Man() {
         System.out.println("Man's constructor");
