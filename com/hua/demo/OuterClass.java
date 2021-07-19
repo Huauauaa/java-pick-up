@@ -14,10 +14,10 @@ public class OuterClass {
         String name = "NonStaticInnerClass";
 
         public void show(String name) {
-            System.out.println(name); // 形参
-            System.out.println(this.name); // 内部类属性
-            System.out.println(OuterClass.this.name); // 外部类属性
-            OuterClass.this.show(); // 外部类的方法
+            System.out.println(name); // 形参(parameter)
+            System.out.println(this.name); // 内部类属性(variable of inner class)
+            System.out.println(OuterClass.this.name); // 外部类属性 (variable of outer class)
+            OuterClass.this.show(); // 外部类的方法(method of outer class)
         }
     }
 
@@ -28,9 +28,17 @@ public class OuterClass {
     }
 
     public void showPartInnerClass() {
+        int a = 1;
         class PartInnerClass {
+
+            public void showPartAttr() {
+//                a += 1;
+                // variable should be final
+                System.out.println(a);
+            }
         }
-        System.out.println(new PartInnerClass());
+        PartInnerClass partInnerClass = new PartInnerClass();
+        partInnerClass.showPartAttr();
     }
 }
 

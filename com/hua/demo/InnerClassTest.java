@@ -6,11 +6,11 @@ public class InnerClassTest {
 
     @Test
     public void test() {
-        // 创建静态内部类实例
+        // create static inner class instance
         OuterClass.StaticInnerClass staticInnerClass = new OuterClass.StaticInnerClass();
         System.out.println(staticInnerClass);
 
-        // 创建非静态内部类实例
+        // create Non static inner class instance
         OuterClass outerClass = new OuterClass();
         OuterClass.NonStaticInnerClass nonStaticInnerClass = outerClass.new NonStaticInnerClass();
         System.out.println(nonStaticInnerClass);
