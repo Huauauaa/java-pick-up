@@ -11,7 +11,7 @@ public class FinalTest {
 
         final int b = 1;
         // java: cannot assign a value to final variable b
-//        b += 1;
+        // b += 1;
         System.out.println(b);
     }
 
@@ -25,7 +25,6 @@ public class FinalTest {
         }
     }
 
-
     @Test
     public void test3() {
         Lad l = new Lad();
@@ -35,14 +34,14 @@ public class FinalTest {
 }
 
 /*
-final class Fi {
-
-}
-
-// java: cannot inherit from final com.hua.demo.Fi
-class Fii extends Fi {
-
-}
+ * final class Fi {
+ * 
+ * }
+ * 
+ * // java: cannot inherit from final com.hua.demo.Fi
+ * class Fii extends Fi {
+ * 
+ * }
  */
 
 class Lad {
@@ -56,11 +55,9 @@ class Lad {
 
 class Boy extends Lad {
     /*
-    * java: rr() in com.hua.demo.Boy cannot override rr() in com.hua.demo.Lad
-  overridden method is final
-    */
-//    void rr() {
-//    }
+     * java: rr() in com.hua.demo.Boy cannot override rr() in com.hua.demo.Lad
+     * overridden method is final
+     */
+    // void rr() {
+    // }
 }
-
-

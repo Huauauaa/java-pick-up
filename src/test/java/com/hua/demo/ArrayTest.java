@@ -10,24 +10,19 @@ public class ArrayTest {
     }
 
     public static void main(String[] args) {
-
-//        int[] ints = new int[2];
-        // print(ints);
-
         Integer[] ints = new Integer[2];
         print(ints);
 
         System.out.println(ints.length);
 
-        String[] strs = {"a", "b", "c"};
+        String[] strs = { "a", "b", "c" };
 
         System.out.println(strs[2]);
         ints[1] = 2;
 
-
         System.out.println(ints.length);
 
-        strs = new String[]{"a", "b"};
+        strs = new String[] { "a", "b" };
 
         System.out.println(strs[1]);
         System.out.println(Arrays.toString(strs));

@@ -7,5 +7,6 @@ java-pick-up.iml
 
 .classpath
 .project
+target
 
 lib
