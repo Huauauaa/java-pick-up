@@ -1,12 +1,15 @@
 package com.hua.demo;
 
-public class equal {
+/**
+ * @author harvey
+ */
+public class EqualDemo {
     public static void main(String[] args) {
         int a = 1;
         char b = 1;
         byte c = 1;
         double d = 1.0;
-        long e = 1l;
+        long e = 1L;
 
         System.out.println(a == b);
         System.out.println(a == c);
