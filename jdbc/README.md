@@ -10,13 +10,15 @@ docker run -d -p 3307:3306 -v /Users/harvey/home/mysql/conf:/etc/mysql/conf.d -v
 create
 database jdbc;
 
-create table t_book
+CREATE TABLE `t_book`
 (
-    name varchar(100)
-);
+    `id`   int NOT NULL AUTO_INCREMENT,
+    `name` varchar(100) DEFAULT NULL,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
 
-insert into t_book
+insert into t_book(name)
 values ('Chinese');
-insert into t_book
+insert into t_book(name)
 values ('English');
 ```
